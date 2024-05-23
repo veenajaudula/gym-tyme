@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #212121;
+}
+
+nav{
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* media queries-mobile first approoch*/
+
+@media (main-width:300px){
+    nav img{
+        height: 5vh;
+        justify-content: center;
+        padding: 2vh 0;
+    }
+
+    nav h3{
+        color: #212121;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    .one h4{
+        text-align: center;
+        padding: 1.5vh 0;
+    }
+
+    .one h4{
+        margin-top: 5vh;
+    }
+
+    .two{
+        background-color: white;
+        padding: 1.5rem;
+        width: 70%;
+        margin: 5vh;
+        border-radius: 12px;
+    }
+
+    .two label{
+        color: #212121;
+        font-size: 1.1rem;
+    }
+
+    .two label[type="text"]{
+        padding: 0.8rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #212121;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .two label[type="radio"],input[type="checkbox"]{
+        margin-right: 1rem;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .checkboxes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .button{
+        background-color: #212121;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        width: 90%;
+        padding: 0.9rem;
+        border-radius: 12px;
+        margin-top: 3vh;
+    }
+
+    .equipment-list h3{
+        text-align: center;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards{
+        background-color: white;
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+
+    .segmentA, .segmentB{
+        background: white;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    h3.segmentA{
+        color:black;
+        text-align: center;
+        padding-top: 4vh;
+    }
+    
+    .segmentA img{
+        width: 70%;
+    }
+
+    .segmentB{
+        background: #212121;
+    }
+
+    h3.segmentB{
+        text-align: center;
+        padding-top: 4vh;
+    }
+
+    .segmentB img{
+        width: 70%;
+    }
+}
